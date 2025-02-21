@@ -27,7 +27,7 @@ jobs:
           sed -i "s/<lastmod>.*<\/lastmod>/<lastmod>$TODAY<\/lastmod>/g" public/sitemap.xml
         
       - name: Run update script
-        run: node scripts/update-content.js
+        run: node --experimental-json-modules --input-type=module scripts/update-content.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
