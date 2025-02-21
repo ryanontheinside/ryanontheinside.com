@@ -2,12 +2,14 @@
   "name": "ryanontheinside.com",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "imports": {
+    "#scripts/*": "./scripts/*"
   },
   "dependencies": {
     "next": "15.1.7",
@@ -24,7 +26,6 @@
     "eslint-config-next": "15.1.7",
     "ico-endec": "^0.1.6",
     "node-fetch": "^3.3.2",
-    "postcss": "^8",
     "sharp": "^0.33.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
