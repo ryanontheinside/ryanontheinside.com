@@ -214,19 +214,19 @@ export default function AIContext() {
           <ul>
             
             <li data-update="ComfyUI_RyanOnTheInside">
-              <time datetime="2025-02-19T20:16:57Z">2/19/2025</time>
+              <time dateTime="2025-02-19T20:16:57Z">2/19/2025</time>
               <span data-update-type="project">Updated ComfyUI_RyanOnTheInside</span>
             </li>
             
 
             <li data-update="ComfyUI_RealtimeNodes">
-              <time datetime="2025-02-19T08:42:32Z">2/19/2025</time>
+              <time dateTime="2025-02-19T08:42:32Z">2/19/2025</time>
               <span data-update-type="project">Updated ComfyUI_RealtimeNodes</span>
             </li>
             
 
             <li data-update="ComfyUI_ProfilerX">
-              <time datetime="2025-02-17T19:09:05Z">2/17/2025</time>
+              <time dateTime="2025-02-17T19:09:05Z">2/17/2025</time>
               <span data-update-type="project">Updated ComfyUI_ProfilerX</span>
             </li>
             
