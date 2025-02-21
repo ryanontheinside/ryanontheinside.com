@@ -1,6 +1,10 @@
-const { Octokit } = require('@octokit/rest');
-const fs = require('fs').promises;
-const path = require('path');
+import { Octokit } from '@octokit/rest';
+import { promises as fs } from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Fallback data in case of API failures
 const fallbackData = {
