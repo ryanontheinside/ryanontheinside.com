@@ -23,7 +23,7 @@ jobs:
         
       - name: Update sitemap dates
         run: |
-          TODAY=$(date +'%Y-%m-%d')
+          TODAY=$(date --utc +'%Y-%m-%dT%H:%M:%S+00:00')
           sed -i "s/<lastmod>.*<\/lastmod>/<lastmod>$TODAY<\/lastmod>/g" public/sitemap.xml
         
       - name: Run update script
