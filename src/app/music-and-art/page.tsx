@@ -18,7 +18,7 @@ export default function MusicAndArt() {
           <div className="mb-12">
             <h3 className="text-xl font-bold mb-4">Composition</h3>
             <p className="text-gray-600 max-w-2xl mb-6">
-              Published composer with works featured in major television productions including The Young and the Restless.
+              Published composer with works featured in major television productions including &quot;The Young and the Restless&quot;.
               Currently represented by Brad Hatfield Music Collective.
             </p>
             <div className="flex gap-4">
@@ -34,7 +34,7 @@ export default function MusicAndArt() {
             <h3 className="text-xl font-bold mb-4">MouthBreather</h3>
             <p className="text-gray-600 max-w-2xl mb-6">
               Founder and guitarist of MouthBreather, a Boston-based band blending math rock, post-hardcore, and experimental folk. 
-              Our latest album "Self-Tape" was released in November 2023.
+              Our latest album &quot;Self-Tape&quot; was released in November 2023.
             </p>
             <div className="flex gap-4">
               <a href="https://mouthbreather.band" 
