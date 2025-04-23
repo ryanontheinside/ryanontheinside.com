@@ -8,6 +8,9 @@ export default function JsonLd() {
       "SoftwareEngineer"
     ],
     "name": "RyanOnTheInside",
+    "alternateName": "Ryan Fosdick",
+    "givenName": "Ryan",
+    "familyName": "Fosdick",
     "url": "https://ryanontheinside.com",
     "jobTitle": "Solutions Engineer & ComfyUI Specialist",
     "description": "Experienced developer focused on real-time ML pipelines and ComfyUI tools, contributing to advancements in AI video processing",
