@@ -5,45 +5,91 @@ import GitHubProjects from '@/components/GitHubProjects'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
-  const [caffeine, setCaffeine] = useState(12)
-  const [temp, setTemp] = useState(88)
+  const [caffeine, setCaffeine] = useState(8) // Start with critically low caffeine
+  const [temp, setTemp] = useState(92) // Start with critically high temperature
 
   // Animate caffeine and temperature levels with more randomness
   useEffect(() => {
     const interval = setInterval(() => {
       setCaffeine(prev => {
-        // More dramatic changes (between -3 and +2)
-        const change = Math.floor(Math.random() * 6) - 3
+        // More dramatic changes (between -2 and +1)
+        const change = Math.floor(Math.random() * 4) - 2
         const newValue = prev + change
-        return Math.min(Math.max(newValue, 5), 20) // Wider range 5-20%
+        return Math.min(Math.max(newValue, 4), 15) // Wider range 4-15%, mostly low
       })
       
       setTemp(prev => {
-        // More dramatic changes (between -2 and +3)
-        const change = Math.floor(Math.random() * 6) - 2
+        // More dramatic changes (between -1 and +2)
+        const change = Math.floor(Math.random() * 4) - 1
         const newValue = prev + change
-        return Math.min(Math.max(newValue, 82), 95) // Wider range 82-95°C
+        return Math.min(Math.max(newValue, 85), 98) // Wider range 85-98°C, mostly high
       })
-    }, 800) // Update more frequently
+    }, 800) // Update frequently
     
     return () => clearInterval(interval)
   }, [])
 
-  // Generate retro power bar blocks
-  const renderPowerBar = (value: number, max: number, color: string) => {
+  // Generate retro power bar blocks with appropriate coloring
+  const renderTempBar = (value: number, max: number) => {
     const segments = 10; // Number of blocks
     const filledSegments = Math.ceil((value / max) * segments);
     
     return (
-      <div className="flex space-x-0.5 w-24">
-        {Array.from({ length: segments }).map((_, i) => (
-          <div 
-            key={i}
-            className={`h-4 w-2 border border-black/30 ${i < filledSegments ? color : 'bg-gray-800/30'}`}
-          ></div>
-        ))}
+      <div className="flex space-x-0.5 w-16 md:w-20">
+        {Array.from({ length: segments }).map((_, i) => {
+          // Color logic for temperature - gets redder as it goes higher
+          let blockColor = 'bg-green-500';
+          
+          if (i >= 6) blockColor = 'bg-yellow-500'; // Upper segments are yellow
+          if (i >= 8) blockColor = 'bg-red-500';    // Top segments are red
+          
+          return (
+            <div 
+              key={i}
+              className={`h-2 w-1 md:w-1.5 border border-black/30 ${i < filledSegments ? blockColor : 'bg-gray-800/30'}`}
+            ></div>
+          );
+        })}
       </div>
     );
+  };
+  
+  // Special bar for caffeine that shows critical when low
+  const renderCaffeineBar = (value: number, max: number) => {
+    const segments = 10; // Number of blocks
+    const filledSegments = Math.ceil((value / max) * segments);
+    
+    return (
+      <div className="flex space-x-0.5 w-16 md:w-20">
+        {Array.from({ length: segments }).map((_, i) => {
+          // Color logic for caffeine - redder as it gets lower
+          let blockColor = 'bg-green-500';
+          
+          if (i <= 3) blockColor = 'bg-red-500';    // First segments are red (critical when low)
+          else if (i <= 5) blockColor = 'bg-yellow-500'; // Next segments are yellow
+          
+          return (
+            <div 
+              key={i}
+              className={`h-2 w-1 md:w-1.5 border border-black/30 ${i < filledSegments ? blockColor : 'bg-gray-800/30'}`}
+            ></div>
+          );
+        })}
+      </div>
+    );
+  };
+
+  // Calculate status text based on levels
+  const getCaffeineStatus = (value: number) => {
+    if (value <= 6) return "CRITICAL";
+    if (value <= 10) return "LOW";
+    return "OK";
+  };
+  
+  const getTempStatus = (value: number) => {
+    if (value >= 95) return "CRITICAL";
+    if (value >= 90) return "HIGH";
+    return "OK";
   };
 
   return (
@@ -74,32 +120,47 @@ export default function Home() {
               Past experience as published composer and touring musician.
             </p>
           </div>
-          <div className="metal-gradient industrial-border p-4 rounded-industrial flex flex-col justify-center">
-            <div className="text-center mb-3 border-b border-metal-light pb-2">
-              <span className="text-lg text-primary font-bold">SYSTEM STATUS</span>
+          <div className="metal-gradient industrial-border p-3 rounded-industrial flex flex-col justify-center">
+            <div className="text-center mb-2 border-b border-metal-light pb-1">
+              <span className="text-base text-primary font-bold">SYSTEM STATUS</span>
             </div>
-            <div className="flex justify-between mb-3 items-center">
-              <span>Caffeine:</span>
-              <div className="flex items-center">
-                {renderPowerBar(caffeine, 20, 'bg-green-500')}
-                <span className="text-red-400 animate-pulse ml-2">{caffeine}%</span>
-              </div>
-            </div>
-            <div className="flex justify-between mb-3 items-center">
-              <span>Temperature:</span>
-              <div className="flex items-center">
-                {renderPowerBar(temp, 100, 'bg-green-500')}
-                <span className="text-orange-400 animate-pulse ml-2">{temp}°C</span>
-              </div>
-            </div>
-            <div className="flex justify-between mb-2">
-              <span>Projects:</span>
-              <span className="text-secondary">ACTIVE</span>
-            </div>
-            <div className="flex justify-between">
-              <span>Availability:</span>
-              <span className="text-primary animate-pulse">ONLINE</span>
-            </div>
+            
+            <table className="w-full text-sm">
+              <tbody>
+                <tr className="h-6">
+                  <td className="whitespace-nowrap pr-2">Caffeine:</td>
+                  <td className="w-24 text-right">{renderCaffeineBar(caffeine, 20)}</td>
+                  <td className="w-16 text-right">
+                    <span className={`${caffeine <= 6 ? 'text-red-400 animate-pulse' : caffeine <= 10 ? 'text-yellow-400' : 'text-green-400'}`}>
+                      {getCaffeineStatus(caffeine)}
+                    </span>
+                  </td>
+                </tr>
+                <tr className="h-6">
+                  <td className="whitespace-nowrap pr-2">Temp:</td>
+                  <td className="w-24 text-right">{renderTempBar(temp, 100)}</td>
+                  <td className="w-16 text-right">
+                    <span className={`${temp >= 95 ? 'text-red-400 animate-pulse' : temp >= 90 ? 'text-yellow-400' : 'text-green-400'}`}>
+                      {getTempStatus(temp)}
+                    </span>
+                  </td>
+                </tr>
+                <tr className="h-6">
+                  <td className="whitespace-nowrap pr-2">Projects:</td>
+                  <td></td>
+                  <td className="w-16 text-right">
+                    <span className="text-secondary">ACTIVE</span>
+                  </td>
+                </tr>
+                <tr className="h-6">
+                  <td className="whitespace-nowrap pr-2">Status:</td>
+                  <td></td>
+                  <td className="w-16 text-right">
+                    <span className="text-primary animate-pulse">ONLINE</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         
