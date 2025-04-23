@@ -4,7 +4,6 @@ import './globals.css'
 import Header from '@/components/Header'
 import JsonLd from '@/components/JsonLd'
 import AIContext from '@/components/AIContext'
-import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const robotoMono = Roboto_Mono({ 

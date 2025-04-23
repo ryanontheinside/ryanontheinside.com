@@ -1,5 +1,13 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
+// Add an interface for the GitHub repository node
+interface GithubRepoNode {
+  owner: {
+    login: string;
+  };
+  name: string;
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   // Check if token exists
   if (!process.env.GITHUB_TOKEN) {
@@ -60,7 +68,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
     
     const pinnedRepos = graphqlData.data.user.pinnedItems.nodes.map(
-      (node: any) => `${node.owner.login}/${node.name}`
+      (node: GithubRepoNode) => `${node.owner.login}/${node.name}`
     );
 
     if (pinnedRepos.length === 0) {

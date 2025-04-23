@@ -1,6 +1,5 @@
 'use client'
 
-import { GitHubRepo } from '@/types/github'
 import { useEffect, useState } from 'react'
 import GitHubProjects from '@/components/GitHubProjects'
 
