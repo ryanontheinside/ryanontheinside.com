@@ -1,51 +1,62 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
+// List of known bot user agents
+const KNOWN_BOTS = [
+  'googlebot',
+  'bingbot',
+  'yandexbot',
+  'duckduckbot',
+  'slurp',
+  'baiduspider',
+  'gptbot',
+  'anthropic-ai',
+  'ccbot',
+  'claude-web',
+  'facebookexternalhit',
+  'twitterbot',
+  'rogerbot',
+  'linkedinbot',
+  'embedly',
+  'quora link preview',
+  'showyoubot',
+  'outbrain',
+  'pinterest',
+  'slackbot',
+  'vkshare',
+  'w3c_validator',
+  'mj12bot',
+  'ia_archiver',
+  'applebot',
+  'compressionbot',
+];
+
+// Middleware function
 export function middleware(request: NextRequest) {
-  // Get the user agent
-  const userAgent = request.headers.get('user-agent') || '';
-  
-  // List of known bot user agents
-  const bots = [
-    'Googlebot',
-    'Bingbot',
-    'Slurp', // Yahoo
-    'DuckDuckBot',
-    'Baiduspider',
-    'YandexBot',
-    'Sogou',
-    'facebookexternalhit',
-    'ia_archiver', // Internet Archive
-    'Twitterbot',
-    'LinkedInBot',
-    'WhatsApp',
-    'Chrome-Lighthouse'
-  ];
+  const userAgent = request.headers.get('user-agent')?.toLowerCase() || '';
   
   // Check if the request is from a bot
-  const isBot = bots.some(bot => userAgent.toLowerCase().includes(bot.toLowerCase()));
+  const isBot = KNOWN_BOTS.some(bot => userAgent.includes(bot));
   
-  // Skip pre-rendering timeout for bots - helps with Vercel's serverless function timeouts
+  // Allow bots to access the site without restrictions
   if (isBot) {
-    // For Vercel, set the vercel-cdn-cache-control header
+    // Setting headers to ensure Vercel edge network doesn't block bots
     const response = NextResponse.next();
-    response.headers.set('Cache-Control', 'public, max-age=3600, s-maxage=86400');
+    response.headers.set('Cache-Control', 'public, max-age=60, s-maxage=60');
+    response.headers.set('X-Robots-Tag', 'all');
+    response.headers.set('X-Vercel-Cache-Control-Allow-Bot', 'true');
+    response.headers.set('X-Crawling-Allowed', 'true');
     return response;
   }
-
+  
+  // For non-bot traffic, continue with normal processing
   return NextResponse.next();
 }
 
-// Run middleware on all routes except for static files and api routes
+// Configure which routes should apply this middleware
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except:
-     * 1. /api routes
-     * 2. /_next (Next.js internals)
-     * 3. /_static (static files)
-     * 4. /_vercel (Vercel internals)
-     * 5. Static files with extensions (.jpg, .png, etc)
-     */
-    '/((?!api|_next|_static|_vercel|.*\\..*$).*)',
+    // Apply to all paths except those specified
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:jpg|jpeg|gif|png|svg|webp)).*)'
   ],
 }; 
