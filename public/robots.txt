@@ -1,5 +1,8 @@
+# Allow all bots to index the site
 User-agent: *
 Allow: /
+
+# Sitemap location
 Sitemap: https://ryanontheinside.com/sitemap.xml
 
 # AI Agent Specific Rules
