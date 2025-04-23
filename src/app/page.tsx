@@ -111,10 +111,11 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="col-span-1 md:col-span-2">
             <p className="text-lg sm:text-xl mb-4 border-l-2 border-primary pl-4">
-              Solutions Engineer at Livepeer, focused on ML pipelines and open source development.
+            Based in Massachusetts, with a current focus on <span className="text-primary">real-time diffusion models</span> and <span className="text-circuit">open source tooling</span> for ML pipelines.
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-4">
-              Based in Massachusetts, with a current focus on <span className="text-primary">real-time diffusion models</span> and <span className="text-circuit">open source tooling</span> for ML pipelines.
+            Solutions Engineer at Livepeer, focused on ML pipelines and open source development.
+
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-6">
               Past experience as published composer and touring musician.
