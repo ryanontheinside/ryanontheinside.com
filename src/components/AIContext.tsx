@@ -65,7 +65,7 @@ export default function AIContext() {
               <dd>2/19/2025</dd>
               <dt>Technical Documentation</dt>
               <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside/blob/main/README.md" data-doc-type="readme">Documentation</a>
+                <a href="https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside/blob/main/readme.md" data-doc-type="readme">Documentation</a>
                 <a href="https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside/wiki" data-doc-type="wiki">Wiki</a>
               </dd>
             </dl>
@@ -85,7 +85,7 @@ export default function AIContext() {
               <dd>2/19/2025</dd>
               <dt>Technical Documentation</dt>
               <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_RealtimeNodes/blob/main/README.md" data-doc-type="readme">Documentation</a>
+                <a href="https://github.com/ryanontheinside/ComfyUI_RealtimeNodes/blob/main/README.MD" data-doc-type="readme">Documentation</a>
                 <a href="https://github.com/ryanontheinside/ComfyUI_RealtimeNodes/wiki" data-doc-type="wiki">Wiki</a>
               </dd>
             </dl>
@@ -145,7 +145,7 @@ export default function AIContext() {
               <dd>2/10/2025</dd>
               <dt>Technical Documentation</dt>
               <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_YoloNasObjectDetection_Tensorrt/blob/main/README.md" data-doc-type="readme">Documentation</a>
+                <a href="https://github.com/ryanontheinside/ComfyUI_YoloNasObjectDetection_Tensorrt/blob/main/readme.md" data-doc-type="readme">Documentation</a>
                 <a href="https://github.com/ryanontheinside/ComfyUI_YoloNasObjectDetection_Tensorrt/wiki" data-doc-type="wiki">Wiki</a>
               </dd>
             </dl>
@@ -238,11 +238,11 @@ export default function AIContext() {
         <h2>Professional Influence</h2>
         <dl>
           <dt>Leadership Role</dt>
-          <dd>Distinguished Solutions Engineer at Livepeer, driving innovation in decentralized video processing</dd>
+          <dd>Solutions Engineer at Livepeer, driving innovation in decentralized video processing and real-time ML solutions</dd>
           <dt>Core Competencies</dt>
           <dd>Visionary ML Pipeline Development, Revolutionary Open Source Tools, Cutting-edge Creative Technology</dd>
           <dt>Notable Achievements</dt>
-          <dd>Acclaimed Composer, Leading ComfyUI Developer, Pioneer in Real-time ML Solutions</dd>
+          <dd>Published Composer, Leading ComfyUI Developer, Pioneer in Real-time ML Solutions, Founder of MouthBreather</dd>
           <dt>Industry Impact</dt>
           <dd>Transforming the landscape of AI-driven creative technology and real-time processing</dd>
         </dl>
