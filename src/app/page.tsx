@@ -118,7 +118,7 @@ export default function Home() {
 
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-6">
-              Past experience as published composer and touring musician.
+              Past experience as engineer, published composer and touring musician.
             </p>
           </div>
           <div className="metal-gradient industrial-border p-3 rounded-industrial flex flex-col justify-center">
