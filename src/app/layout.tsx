@@ -1,29 +1,35 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import JsonLd from '@/components/JsonLd'
 import AIContext from '@/components/AIContext'
+import Image from 'next/image'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const robotoMono = Roboto_Mono({ 
+  subsets: ['latin'],
+  variable: '--font-roboto-mono',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'RyanOnTheInside - Tech, Music & Art',
+  title: 'RyanOnTheInside - Industrial Tech Solutions',
   description: 'Solution Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
   keywords: ['ComfyUI', 'ML pipelines', 'AI tools', 'diffusion models', 'Livepeer', 'open source', 'music', 'art'],
   authors: [{ name: 'RyanOnTheInside' }],
   openGraph: {
-    title: 'RyanOnTheInside - Tech, Music & Art',
+    title: 'RyanOnTheInside - Industrial Tech Solutions',
     description: 'Solution Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
     url: 'https://ryanontheinside.com',
     siteName: 'RyanOnTheInside',
     locale: 'en_US',
     type: 'website',
     images: [{
-      url: '/og-image.png',
-      width: 1200,
-      height: 630,
-      alt: 'RyanOnTheInside - Tech, Music & Art'
+      url: '/logo.svg',
+      width: 200,
+      height: 200,
+      alt: 'RyanOnTheInside - Industrial Tech Solutions'
     }],
   },
   other: {
@@ -32,18 +38,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RyanOnTheInside - Tech, Music & Art',
+    title: 'RyanOnTheInside - Industrial Tech Solutions',
     description: 'Solution Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
     creator: '@ryanontheinside',
-    images: ['/og-image.png'],
+    images: ['/logo.svg'],
   },
   robots: {
     index: true,
     follow: true,
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/logo.svg',
+    apple: '/logo.svg',
   },
   verification: {
     // Get this from Google Search Console: https://search.google.com/search-console
@@ -59,12 +65,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-white`}>
+      <body className={`${robotoMono.variable} ${inter.variable} min-h-screen bg-background`}>
         <JsonLd />
         <AIContext />
         <Header />
         <div className="pt-16">
           {children}
+        </div>
+        <div className="fixed inset-0 opacity-5 pointer-events-none z-[-1]" 
+             style={{ 
+               backgroundImage: `url('/circuit-bg.svg')`, 
+               backgroundSize: '400px',
+               backgroundRepeat: 'repeat'
+             }}>
         </div>
       </body>
     </html>
