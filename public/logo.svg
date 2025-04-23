@@ -1,0 +1,42 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Metal background -->
+  <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#353a40" />
+    <stop offset="50%" stop-color="#5c636e" />
+    <stop offset="100%" stop-color="#353a40" />
+  </linearGradient>
+  
+  <!-- Outer casing -->
+  <rect width="200" height="200" fill="url(#metalGradient)" rx="10" />
+  <rect x="10" y="10" width="180" height="180" fill="#0e1013" rx="5" />
+  
+  <!-- Gear elements -->
+  <g fill="#4cc9f0">
+    <circle cx="100" cy="100" r="60" fill="#0e1013" stroke="#4cc9f0" stroke-width="3" />
+    <path d="M100 30 L105 40 H95 Z" />
+    <path d="M100 170 L105 160 H95 Z" />
+    <path d="M30 100 L40 105 V95 Z" />
+    <path d="M170 100 L160 105 V95 Z" />
+    <path d="M51 51 L59 59 L48 70 Z" />
+    <path d="M149 51 L141 59 L152 70 Z" />
+    <path d="M51 149 L59 141 L48 130 Z" />
+    <path d="M149 149 L141 141 L152 130 Z" />
+  </g>
+  
+  <!-- R letter -->
+  <g>
+    <path d="M80 70 H110 A20 20 0 0 1 110 110 H90 L115 140" fill="none" stroke="#4cc9f0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  
+  <!-- Circuit accents -->
+  <g stroke="#f72585" stroke-width="1.5" fill="none">
+    <path d="M50 100 H70" />
+    <path d="M130 100 H150" />
+    <circle cx="50" cy="100" r="3" fill="#f72585" />
+    <circle cx="150" cy="100" r="3" fill="#f72585" />
+  </g>
+  
+  <!-- Glow effect -->
+  <circle cx="100" cy="100" r="70" fill="#4cc9f0" fill-opacity="0.05" />
+  <circle cx="100" cy="100" r="65" fill="#4cc9f0" fill-opacity="0.05" />
+</svg> 
