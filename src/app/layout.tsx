@@ -14,12 +14,12 @@ const robotoMono = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'RyanOnTheInside - Industrial Tech Solutions',
+  title: 'RyanOnTheInside',
   description: 'Solution Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
   keywords: ['ComfyUI', 'ML pipelines', 'AI tools', 'diffusion models', 'Livepeer', 'open source', 'music', 'art'],
   authors: [{ name: 'RyanOnTheInside' }],
   openGraph: {
-    title: 'RyanOnTheInside - Industrial Tech Solutions',
+    title: 'RyanOnTheInside',
     description: 'Solution Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
     url: 'https://ryanontheinside.com',
     siteName: 'RyanOnTheInside',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       url: '/logo.svg',
       width: 200,
       height: 200,
-      alt: 'RyanOnTheInside - Industrial Tech Solutions'
+      alt: 'RyanOnTheInside'
     }],
   },
   other: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RyanOnTheInside - Industrial Tech Solutions',
+    title: 'RyanOnTheInside',
     description: 'Solution Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
     creator: '@ryanontheinside',
     images: ['/logo.svg'],
@@ -69,7 +69,7 @@ export default function RootLayout({
         <JsonLd />
         <AIContext />
         <Header />
-        <div className="pt-16">
+        <div className="pt-20 md:pt-16">
           {children}
         </div>
         <div className="fixed inset-0 opacity-5 pointer-events-none z-[-1]" 
