@@ -14,12 +14,12 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: 'RyanOnTheInside',
-  description: 'Senior AI Research Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
-  keywords: ['ComfyUI', 'ML pipelines', 'AI tools', 'diffusion models', 'Livepeer', 'open source', 'music', 'art'],
+  description: 'Senior AI Research Engineer at Livepeer, core developer on Scope researching autoregressive video models, creator of ComfyUI tools, and founder of MouthBreather',
+  keywords: ['ComfyUI', 'ML pipelines', 'AI tools', 'diffusion models', 'autoregressive video models', 'real-time control', 'Livepeer', 'Scope', 'StreamDiffusion', 'open source', 'music', 'art'],
   authors: [{ name: 'RyanOnTheInside' }],
   openGraph: {
     title: 'RyanOnTheInside',
-    description: 'Senior AI Research Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
+    description: 'Senior AI Research Engineer at Livepeer, core developer on Scope researching autoregressive video models, creator of ComfyUI tools, and founder of MouthBreather',
     url: 'https://ryanontheinside.com',
     siteName: 'RyanOnTheInside',
     locale: 'en_US',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'RyanOnTheInside',
-    description: 'Senior AI Research Engineer at Livepeer, creator of ComfyUI tools, and founder of MouthBreather',
+    description: 'Senior AI Research Engineer at Livepeer, core developer on Scope researching autoregressive video models, creator of ComfyUI tools, and founder of MouthBreather',
     creator: '@ryanontheinside',
     images: ['/logo.svg'],
   },

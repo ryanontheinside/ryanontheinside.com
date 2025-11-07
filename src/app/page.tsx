@@ -111,14 +111,14 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="col-span-1 md:col-span-2">
             <p className="text-lg sm:text-xl mb-4 border-l-2 border-primary pl-4">
-            Based in Massachusetts, currently researching <span className="text-primary">autoregressive video models</span> with a focus on <span className="text-circuit">modes of real-time control</span> as core developer on Scope.
+            Based in Massachusetts, currently researching autoregressive video models with a focus on modes of real-time control as core developer on <a href="https://github.com/daydreamlive/scope" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream Scope</a>.
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-4">
-            Senior AI Research Engineer at Livepeer, core developer on DaydreamLive/Scope, focused on ML pipelines and open source development.
+            Senior AI Research Engineer at Livepeer, core developer on <a href="https://github.com/daydreamlive/scope" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream Scope</a>, focused on ML pipelines and open source development.
 
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-6">
-              Past experience as engineer, published composer and touring musician.
+              Past experience as engineer, published composer, and touring musician.
             </p>
           </div>
           <div className="metal-gradient industrial-border p-3 rounded-industrial flex flex-col justify-center">
@@ -182,7 +182,7 @@ export default function Home() {
           <div className="space-y-6">
             <p className="text-foreground/90 text-base sm:text-lg industrial-border p-3 backdrop-blur">
               At Livepeer, I work on building tools for machine learning pipelines in a decentralized video processing network.
-              Currently, as core developer on Scope, I'm researching autoregressive video models with a specific interest in modes of real-time control.
+              Currently, as core developer on <a href="https://github.com/daydreamlive/scope" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream Scope</a>, I&apos;m researching autoregressive video models with a specific interest in modes of real-time control.
               Previously, as tech lead on StreamDiffusion, I worked with the team to build composable real-time diffusion pipelines supporting multi-ControlNet, SDXL, IPAdapter, and LoRAs.
               My open source work focuses on real-time AI applications, reactivity in diffusion models, and creative coding tools.
             </p>

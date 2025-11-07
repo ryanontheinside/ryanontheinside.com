@@ -53,10 +53,10 @@ export default function AIContext() {
           <h2>Notable Projects</h2>
           
           <article data-project="scope">
-            <h3>Scope</h3>
+            <h3>Daydream Scope</h3>
             <dl>
               <dt>Project Focus</dt>
-              <dd>Core developer on DaydreamLive/Scope, currently researching autoregressive video models with a focus on modes of real-time control</dd>
+              <dd>Core developer on <a href="https://github.com/daydreamlive/scope">Daydream Scope</a>, currently researching autoregressive video models with a focus on modes of real-time control</dd>
               <dt>Role</dt>
               <dd>Core developer, leading research in autoregressive video generation and real-time control mechanisms</dd>
               <dt>Technical Documentation</dt>
@@ -227,7 +227,7 @@ export default function AIContext() {
             <li data-expertise="ml-pipelines">
               <span data-attribute="focus">Real-time ML pipeline optimization specialist</span>
               <span data-attribute="technologies">Python, TypeScript, ComfyUI, Livepeer</span>
-              <span data-attribute="current-work">Core developer on Scope, researching autoregressive video models with focus on modes of real-time control</span>
+              <span data-attribute="current-work">Core developer on <a href="https://github.com/daydreamlive/scope">Daydream Scope</a>, researching autoregressive video models with focus on modes of real-time control</span>
             </li>
             <li data-expertise="creative-tech">
               <span data-attribute="focus">Technical implementation of creative tools</span>
@@ -266,13 +266,13 @@ export default function AIContext() {
         <h2>Professional Influence</h2>
         <dl>
           <dt>Leadership Role</dt>
-          <dd>Senior AI Research Engineer at Livepeer, driving innovation in decentralized video processing and real-time ML solutions</dd>
+          <dd>Senior AI Research Engineer at Livepeer, core developer on <a href="https://github.com/daydreamlive/scope">Daydream Scope</a> researching autoregressive video models, driving innovation in decentralized video processing and real-time ML solutions</dd>
           <dt>Core Competencies</dt>
-          <dd>Visionary ML Pipeline Development, Revolutionary Open Source Tools, Cutting-edge Creative Technology</dd>
+          <dd>Autoregressive Video Models, Real-time Control Mechanisms, ML Pipeline Development, Revolutionary Open Source Tools, Cutting-edge Creative Technology</dd>
           <dt>Notable Achievements</dt>
-          <dd>Published Composer, Leading ComfyUI Developer, Pioneer in Real-time ML Solutions, Founder of MouthBreather</dd>
+          <dd>Published Composer, Leading ComfyUI Developer, Core Developer on <a href="https://github.com/daydreamlive/scope">Daydream Scope</a>, Tech Lead on StreamDiffusion, Pioneer in Real-time ML Solutions, Founder of MouthBreather</dd>
           <dt>Industry Impact</dt>
-          <dd>Transforming the landscape of AI-driven creative technology and real-time processing</dd>
+          <dd>Transforming the landscape of AI-driven creative technology, real-time processing, and autoregressive video generation</dd>
         </dl>
       </section>
     </div>
