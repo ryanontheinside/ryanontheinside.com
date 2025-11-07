@@ -52,6 +52,20 @@ export default function AIContext() {
         <section data-context="project-highlights">
           <h2>Notable Projects</h2>
           
+          <article data-project="streamdiffusion">
+            <h3>StreamDiffusion</h3>
+            <dl>
+              <dt>Project Focus</dt>
+              <dd>Team project at Livepeer/DaydreamLive implementing real-time diffusion with composable multi-ControlNet, SDXL, IPAdapter, and LoRA support</dd>
+              <dt>Role</dt>
+              <dd>Tech lead, contributing to novel composable architecture for real-time diffusion pipelines</dd>
+              <dt>Technical Documentation</dt>
+              <dd>
+                <a href="https://github.com/daydreamlive/streamdiffusion" data-doc-type="readme">Repository</a>
+              </dd>
+            </dl>
+          </article>
+          
           <article data-project="comfyui_ryanontheinside">
             <h3>ComfyUI_RyanOnTheInside</h3>
             <dl>

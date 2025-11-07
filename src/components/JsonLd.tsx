@@ -23,6 +23,13 @@ export default function JsonLd() {
     "knowsAbout": [
       {
         "@type": "SoftwareApplication",
+        "name": "StreamDiffusion",
+        "description": "Real-time diffusion pipeline with composable multi-ControlNet, SDXL, IPAdapter, and LoRA support. Tech lead on team project at Livepeer/DaydreamLive.",
+        "url": "https://github.com/daydreamlive/streamdiffusion",
+        "applicationCategory": "Machine Learning"
+      },
+      {
+        "@type": "SoftwareApplication",
         "name": "ComfyUI_RyanOnTheInside",
         "description": "Everything-Reactivity in ComfyUI (audio, MIDI, motion, proximity, and more).",
         "url": "https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside",

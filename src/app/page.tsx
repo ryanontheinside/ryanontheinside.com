@@ -182,6 +182,7 @@ export default function Home() {
           <div className="space-y-6">
             <p className="text-foreground/90 text-base sm:text-lg industrial-border p-3 backdrop-blur">
               At Livepeer, I work on building tools for machine learning pipelines in a decentralized video processing network.
+              As tech lead on StreamDiffusion, I work with the team to build composable real-time diffusion pipelines supporting multi-ControlNet, SDXL, IPAdapter, and LoRAs.
               My open source work focuses on real-time AI applications, reactivity in diffusion models, and creative coding tools.
             </p>
             <div className="flex flex-wrap gap-2 sm:gap-3">
