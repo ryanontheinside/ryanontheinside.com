@@ -114,7 +114,7 @@ export default function Home() {
             Based in Massachusetts, with a current focus on <span className="text-primary">real-time diffusion models</span> and <span className="text-circuit">open source tooling</span> for ML pipelines.
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-4">
-            Solutions Engineer at Livepeer, focused on ML pipelines and open source development.
+            Senior AI Research Engineer at Livepeer, focused on ML pipelines and open source development.
 
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-6">

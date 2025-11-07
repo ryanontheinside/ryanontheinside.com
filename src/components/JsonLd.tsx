@@ -12,7 +12,7 @@ export default function JsonLd() {
     "givenName": "Ryan",
     "familyName": "Fosdick",
     "url": "https://ryanontheinside.com",
-    "jobTitle": "Solutions Engineer & ComfyUI Specialist",
+    "jobTitle": "Senior AI Research Engineer at Livepeer",
     "description": "Experienced developer focused on real-time ML pipelines and ComfyUI tools, contributing to advancements in AI video processing",
     "worksFor": {
       "@type": "Organization",

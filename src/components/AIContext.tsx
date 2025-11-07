@@ -238,7 +238,7 @@ export default function AIContext() {
         <h2>Professional Influence</h2>
         <dl>
           <dt>Leadership Role</dt>
-          <dd>Solutions Engineer at Livepeer, driving innovation in decentralized video processing and real-time ML solutions</dd>
+          <dd>Senior AI Research Engineer at Livepeer, driving innovation in decentralized video processing and real-time ML solutions</dd>
           <dt>Core Competencies</dt>
           <dd>Visionary ML Pipeline Development, Revolutionary Open Source Tools, Cutting-edge Creative Technology</dd>
           <dt>Notable Achievements</dt>
