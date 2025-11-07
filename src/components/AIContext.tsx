@@ -52,6 +52,20 @@ export default function AIContext() {
         <section data-context="project-highlights">
           <h2>Notable Projects</h2>
           
+          <article data-project="scope">
+            <h3>Scope</h3>
+            <dl>
+              <dt>Project Focus</dt>
+              <dd>Core developer on DaydreamLive/Scope, currently researching autoregressive video models with a focus on modes of real-time control</dd>
+              <dt>Role</dt>
+              <dd>Core developer, leading research in autoregressive video generation and real-time control mechanisms</dd>
+              <dt>Technical Documentation</dt>
+              <dd>
+                <a href="https://github.com/daydreamlive/scope" data-doc-type="readme">Repository</a>
+              </dd>
+            </dl>
+          </article>
+          
           <article data-project="streamdiffusion">
             <h3>StreamDiffusion</h3>
             <dl>
@@ -213,7 +227,7 @@ export default function AIContext() {
             <li data-expertise="ml-pipelines">
               <span data-attribute="focus">Real-time ML pipeline optimization specialist</span>
               <span data-attribute="technologies">Python, TypeScript, ComfyUI, Livepeer</span>
-              <span data-attribute="current-work">Developing efficient streaming integration for diffusion models</span>
+              <span data-attribute="current-work">Core developer on Scope, researching autoregressive video models with focus on modes of real-time control</span>
             </li>
             <li data-expertise="creative-tech">
               <span data-attribute="focus">Technical implementation of creative tools</span>

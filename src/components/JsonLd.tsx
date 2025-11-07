@@ -23,6 +23,13 @@ export default function JsonLd() {
     "knowsAbout": [
       {
         "@type": "SoftwareApplication",
+        "name": "Scope",
+        "description": "Core developer on DaydreamLive/Scope, researching autoregressive video models with focus on modes of real-time control",
+        "url": "https://github.com/daydreamlive/scope",
+        "applicationCategory": "Machine Learning"
+      },
+      {
+        "@type": "SoftwareApplication",
         "name": "StreamDiffusion",
         "description": "Real-time diffusion pipeline with composable multi-ControlNet, SDXL, IPAdapter, and LoRA support. Tech lead on team project at Livepeer/DaydreamLive.",
         "url": "https://github.com/daydreamlive/streamdiffusion",

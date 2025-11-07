@@ -111,10 +111,10 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="col-span-1 md:col-span-2">
             <p className="text-lg sm:text-xl mb-4 border-l-2 border-primary pl-4">
-            Based in Massachusetts, with a current focus on <span className="text-primary">real-time diffusion models</span> and <span className="text-circuit">open source tooling</span> for ML pipelines.
+            Based in Massachusetts, currently researching <span className="text-primary">autoregressive video models</span> with a focus on <span className="text-circuit">modes of real-time control</span> as core developer on Scope.
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-4">
-            Senior AI Research Engineer at Livepeer, focused on ML pipelines and open source development.
+            Senior AI Research Engineer at Livepeer, core developer on DaydreamLive/Scope, focused on ML pipelines and open source development.
 
             </p>
             <p className="text-base sm:text-lg text-foreground/80 mb-6">
@@ -182,7 +182,8 @@ export default function Home() {
           <div className="space-y-6">
             <p className="text-foreground/90 text-base sm:text-lg industrial-border p-3 backdrop-blur">
               At Livepeer, I work on building tools for machine learning pipelines in a decentralized video processing network.
-              As tech lead on StreamDiffusion, I work with the team to build composable real-time diffusion pipelines supporting multi-ControlNet, SDXL, IPAdapter, and LoRAs.
+              Currently, as core developer on Scope, I'm researching autoregressive video models with a specific interest in modes of real-time control.
+              Previously, as tech lead on StreamDiffusion, I worked with the team to build composable real-time diffusion pipelines supporting multi-ControlNet, SDXL, IPAdapter, and LoRAs.
               My open source work focuses on real-time AI applications, reactivity in diffusion models, and creative coding tools.
             </p>
             <div className="flex flex-wrap gap-2 sm:gap-3">
