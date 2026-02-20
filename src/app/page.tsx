@@ -51,6 +51,25 @@ export default function Home() {
             <span>Daydream</span>
           </div>
         </a>
+
+        <a href="https://daydream.live/real-time-video-generation-control"
+           target="_blank" rel="noopener noreferrer"
+           className="card card-hover block p-6 group mt-4">
+          <div className="flex items-start justify-between gap-4 mb-3">
+            <h3 className="text-base sm:text-lg font-semibold text-foreground group-hover:text-primary transition-colors leading-snug">
+              Training-Free Real-Time Control for Autoregressive Video Generation
+            </h3>
+            <span className="tag shrink-0">Blog</span>
+          </div>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            A companion post exploring the engineering and research behind enabling real-time
+            VACE-style control in autoregressive video diffusion pipelines.
+          </p>
+          <div className="flex items-center gap-4 text-xs text-text-secondary">
+            <span>Ryan Fosdick</span>
+            <span>Daydream</span>
+          </div>
+        </a>
       </section>
 
       {/* Projects */}
