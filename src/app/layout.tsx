@@ -68,15 +68,8 @@ export default function RootLayout({
         <JsonLd />
         <AIContext />
         <Header />
-        <div className="pt-20 md:pt-16">
+        <div className="pt-16">
           {children}
-        </div>
-        <div className="fixed inset-0 opacity-5 pointer-events-none z-[-1]" 
-             style={{ 
-               backgroundImage: `url('/circuit-bg.svg')`, 
-               backgroundSize: '400px',
-               backgroundRepeat: 'repeat'
-             }}>
         </div>
       </body>
     </html>

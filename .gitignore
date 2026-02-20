@@ -41,3 +41,8 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# private working docs
+PLAN.md
+notes.txt
+.env*.local
