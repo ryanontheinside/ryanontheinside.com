@@ -1,125 +1,94 @@
 export default function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": [
-      "Person",
-      "Developer",
-      "Musician",
-      "SoftwareEngineer"
-    ],
-    "name": "RyanOnTheInside",
-    "alternateName": "Ryan Fosdick",
-    "givenName": "Ryan",
-    "familyName": "Fosdick",
-    "url": "https://ryanontheinside.com",
-    "jobTitle": "Senior AI Research Engineer at Livepeer",
-    "description": "Senior AI Research Engineer at Livepeer, core developer on Scope researching autoregressive video models with focus on real-time control. Experienced in real-time ML pipelines, ComfyUI tools, and contributing to advancements in AI video processing",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Livepeer",
-      "url": "https://livepeer.org",
-      "description": "Decentralized video infrastructure protocol"
-    },
-    "knowsAbout": [
+    "@graph": [
       {
-        "@type": "SoftwareApplication",
-        "name": "Scope",
-        "description": "Core developer on DaydreamLive/Scope, researching autoregressive video models with focus on modes of real-time control",
+        "@type": ["Person", "SoftwareEngineer", "Musician"],
+        "@id": "https://ryanontheinside.com/#person",
+        "name": "RyanOnTheInside",
+        "alternateName": "Ryan Fosdick",
+        "givenName": "Ryan",
+        "familyName": "Fosdick",
+        "url": "https://ryanontheinside.com",
+        "jobTitle": "AI Research Engineer at Daydream",
+        "description": "Applied ML researcher and engineer focused on real-time autoregressive video diffusion. Senior AI Research Engineer at Livepeer, core developer on Daydream Scope. Author of 'Adapting VACE for Real-Time Autoregressive Video Diffusion'. Creator of widely-used ComfyUI tooling. Published composer and musician.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Daydream",
+          "url": "https://daydream.live",
+          "description": "Real-time AI video models and pipelines",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Livepeer",
+            "url": "https://livepeer.org"
+          }
+        },
+        "knowsAbout": [
+          "Autoregressive video diffusion",
+          "Real-time video generation",
+          "VACE (Video All-in-one Creation and Editing)",
+          "Diffusion models",
+          "ML pipeline architecture",
+          "ComfyUI",
+          "ControlNet",
+          "SDXL",
+          "LoRA",
+          "IPAdapter",
+          "Real-time AI systems",
+          "Music composition"
+        ],
+        "sameAs": [
+          "https://github.com/ryanontheinside",
+          "https://youtube.com/@ryanontheinside",
+          "https://instagram.com/ryanontheinside",
+          "https://x.com/ryanontheinside",
+          "https://civitai.com/user/ryanontheinside",
+          "https://arxiv.org/abs/2602.14381"
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://arxiv.org/abs/2602.14381",
+        "name": "Adapting VACE for Real-Time Autoregressive Video Diffusion",
+        "headline": "Adapting VACE for Real-Time Autoregressive Video Diffusion",
+        "author": {
+          "@id": "https://ryanontheinside.com/#person"
+        },
+        "datePublished": "2026-02-16",
+        "url": "https://arxiv.org/abs/2602.14381",
+        "publisher": {
+          "@type": "Organization",
+          "name": "arXiv"
+        },
+        "abstract": "An architectural adaptation that moves VACE reference frames out of the diffusion latent space into a parallel conditioning pathway, enabling real-time autoregressive video generation using existing pretrained weights with no retraining required.",
+        "about": [
+          "Autoregressive video diffusion",
+          "Real-time video generation",
+          "VACE",
+          "Diffusion models"
+        ]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "Daydream Scope",
+        "description": "Open-source real-time generative AI pipeline tool for autoregressive video models",
         "url": "https://github.com/daydreamlive/scope",
-        "applicationCategory": "Machine Learning"
+        "codeRepository": "https://github.com/daydreamlive/scope",
+        "author": {
+          "@id": "https://ryanontheinside.com/#person"
+        },
+        "programmingLanguage": "Python"
       },
       {
-        "@type": "SoftwareApplication",
-        "name": "StreamDiffusion",
-        "description": "Real-time diffusion pipeline with composable multi-ControlNet, SDXL, IPAdapter, and LoRA support. Tech lead on team project at Livepeer/DaydreamLive.",
-        "url": "https://github.com/daydreamlive/streamdiffusion",
-        "applicationCategory": "Machine Learning"
-      },
-      {
-        "@type": "SoftwareApplication",
+        "@type": "SoftwareSourceCode",
         "name": "ComfyUI_RyanOnTheInside",
-        "description": "Everything-Reactivity in ComfyUI (audio, MIDI, motion, proximity, and more).",
+        "description": "Audio, MIDI, motion, and proximity reactivity nodes for ComfyUI. 700+ GitHub stars.",
         "url": "https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside",
-        "dateModified": "2025-02-19T20:16:57Z",
-        "interactionStatistic": [
-          {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/StarAction",
-            "userInteractionCount": 418
-          },
-          {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/ContributeAction",
-            "userInteractionCount": 4
-          }
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "ComfyUI_RealtimeNodes",
-        "description": "ComfyUI nodes for real-time use cases",
-        "url": "https://github.com/ryanontheinside/ComfyUI_RealtimeNodes",
-        "dateModified": "2025-02-19T08:42:32Z",
-        "interactionStatistic": [
-          {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/StarAction",
-            "userInteractionCount": 22
-          },
-          {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/ContributeAction",
-            "userInteractionCount": 2
-          }
-        ]
-      },
-      {
-        "@type": "Thing",
-        "name": "Machine Learning",
-        "description": "Specialized in real-time ML pipeline architectures and diffusion model optimization"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "ComfyUI",
-        "description": "Leading expert and recognized authority in ComfyUI development, creating transformative tools that push the boundaries of real-time AI processing"
-      },
-      {
-        "@type": "Thing",
-        "name": "Music Composition",
-        "description": "Acclaimed composer with works featured in major television productions, bridging the gap between technology and artistic expression"
-      }
-    ],
-    "mainEntity": {
-      "@type": "Project",
-      "name": "ComfyStream",
-      "description": "Real-time streaming integration for ComfyUI, enabling efficient video processing through diffusion models",
-      "url": "https://github.com/ryanontheinside/comfystream",
-      "programmingLanguage": ["Python", "TypeScript"],
-      "applicationCategory": "Machine Learning",
-      "operatingSystem": "Cross-platform",
-      "awards": "Pioneer in real-time AI streaming technology"
-    },
-    "award": [
-      "Innovation in ML Pipeline Design",
-      "Outstanding Contributions to ComfyUI Ecosystem",
-      "Excellence in Creative Technology Integration"
-    ],
-    "sameAs": [
-      "https://github.com/ryanontheinside",
-      "https://youtube.com/@ryanontheinside",
-      "https://instagram.com/ryanontheinside",
-      "https://x.com/ryanontheinside"
-    ],
-    "additionalType": [
-      "https://schema.org/SoftwareEngineer",
-      "https://schema.org/Musician",
-      "https://schema.org/Innovator"
-    ],
-    "interactionStatistic": [
-      {
-        "@type": "InteractionCounter",
-        "interactionType": "https://schema.org/FollowAction",
-        "userInteractionCount": 45
+        "codeRepository": "https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside",
+        "author": {
+          "@id": "https://ryanontheinside.com/#person"
+        },
+        "programmingLanguage": "Python"
       }
     ]
   }
@@ -130,4 +99,4 @@ export default function JsonLd() {
       dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
     />
   )
-} 
+}

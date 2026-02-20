@@ -14,8 +14,8 @@ export default function Home() {
         <p className="text-sm text-text-secondary mb-6">Ryan Fosdick</p>
 
         <p className="text-lg sm:text-xl text-foreground/90 mb-4 max-w-2xl leading-relaxed">
-          Senior AI Research Engineer at{' '}
-          <a href="https://livepeer.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Livepeer</a>.
+          AI Research Engineer at{' '}
+          <a href="https://daydream.live" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream</a>.
           Core developer on{' '}
           <a href="https://github.com/daydreamlive/scope" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream Scope</a>,
           researching autoregressive video models with a focus on real-time control.
@@ -51,29 +51,6 @@ export default function Home() {
             <span>Daydream</span>
           </div>
         </a>
-      </section>
-
-      {/* Work */}
-      <section className="mb-16 sm:mb-20">
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-text-secondary mb-6">Work</h2>
-
-        <div className="card p-6 space-y-4">
-          <p className="text-sm text-foreground/90 leading-relaxed">
-            At Livepeer, I build tools for machine learning pipelines in a decentralized video processing network.
-            As core developer on{' '}
-            <a href="https://github.com/daydreamlive/scope" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream Scope</a>,
-            I research autoregressive video models with a specific interest in modes of real-time control.
-            Previously, as tech lead on StreamDiffusion, I worked with the team to build composable real-time
-            diffusion pipelines supporting multi-ControlNet, SDXL, IPAdapter, and LoRAs.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="tag">ML Pipelines</span>
-            <span className="tag">ComfyUI</span>
-            <span className="tag">Diffusion Models</span>
-            <span className="tag">Real-time AI</span>
-            <span className="tag">Open Source</span>
-          </div>
-        </div>
       </section>
 
       {/* Projects */}

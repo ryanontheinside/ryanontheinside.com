@@ -14,12 +14,12 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: 'RyanOnTheInside',
-  description: 'Senior AI Research Engineer at Livepeer, core developer on Scope researching autoregressive video models, creator of ComfyUI tools, and founder of MouthBreather',
+  description: 'AI Research Engineer at Daydream. Core developer on Scope, researching autoregressive video models. Creator of ComfyUI tools.',
   keywords: ['ComfyUI', 'ML pipelines', 'AI tools', 'diffusion models', 'autoregressive video models', 'real-time control', 'Livepeer', 'Scope', 'StreamDiffusion', 'open source', 'music', 'art'],
   authors: [{ name: 'RyanOnTheInside' }],
   openGraph: {
     title: 'RyanOnTheInside',
-    description: 'Senior AI Research Engineer at Livepeer, core developer on Scope researching autoregressive video models, creator of ComfyUI tools, and founder of MouthBreather',
+    description: 'AI Research Engineer at Daydream. Core developer on Scope, researching autoregressive video models. Creator of ComfyUI tools.',
     url: 'https://ryanontheinside.com',
     siteName: 'RyanOnTheInside',
     locale: 'en_US',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'RyanOnTheInside',
-    description: 'Senior AI Research Engineer at Livepeer, core developer on Scope researching autoregressive video models, creator of ComfyUI tools, and founder of MouthBreather',
+    description: 'AI Research Engineer at Daydream. Core developer on Scope, researching autoregressive video models. Creator of ComfyUI tools.',
     creator: '@ryanontheinside',
     images: ['/logo.svg'],
   },
