@@ -14,14 +14,14 @@ export default function Home() {
         <p className="text-sm text-text-secondary mb-6">Ryan Fosdick</p>
 
         <p className="text-lg sm:text-xl text-foreground/90 mb-4 max-w-2xl leading-relaxed">
-          AI Research Engineer at{' '}
+          Applied AI Researcher at{' '}
           <a href="https://daydream.live" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream</a>.
-          Core developer on{' '}
+          Pod Lead for{' '}
           <a href="https://github.com/daydreamlive/scope" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream Scope</a>,
           researching autoregressive video models with a focus on real-time control.
         </p>
         <p className="text-sm text-text-secondary mb-8 max-w-2xl">
-          Previously tech lead on StreamDiffusion. Published composer and touring musician.
+          Previously tech lead on Daydream&apos;s StreamDiffusion fork (now used in production apps like TouchDesigner), where I accelerated IPAdapters and added multi-ControlNet support. Published composer and touring musician.
         </p>
 
         <SocialLinks />
