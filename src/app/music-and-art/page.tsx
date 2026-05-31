@@ -12,6 +12,40 @@ export default function MusicAndArt() {
         <SocialLinks />
       </section>
 
+      {/* DEMON — where the music and the research meet */}
+      <section className="mb-16 font-mono">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-text-secondary mb-6">Music × AI</h2>
+        <div className="card card-hover block p-6">
+          <div className="flex items-start justify-between gap-4 mb-3">
+            <h3 className="text-base sm:text-lg font-semibold text-foreground leading-snug">
+              DEMON: Diffusion Engine for Musical Orchestrated Noise
+            </h3>
+            <span className="tag shrink-0">arXiv 2026</span>
+          </div>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            Where the music and the research meet. DEMON is a real-time diffusion engine that makes the
+            denoising process playable as a live musical instrument, streaming music generation on a single
+            consumer GPU while exposing the model&apos;s internals as live performance controls. As both a
+            composer and a diffusion researcher, this is the work that fuses the two.
+          </p>
+          <div className="flex items-center gap-3 text-xs text-text-secondary mb-4">
+            <span>Ryan Fosdick</span>
+            <span className="text-accent">Lead author</span>
+            <span>Daydream</span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <a href="https://arxiv.org/abs/2605.28657" target="_blank" rel="noopener noreferrer"
+               className="tag hover:text-primary hover:border-border-hover transition-colors">Paper</a>
+            <a href="https://daydreamlive.github.io/DEMON/" target="_blank" rel="noopener noreferrer"
+               className="tag hover:text-primary hover:border-border-hover transition-colors">Project page</a>
+            <a href="https://github.com/daydreamlive/DEMON" target="_blank" rel="noopener noreferrer"
+               className="tag hover:text-primary hover:border-border-hover transition-colors">Code</a>
+            <a href="https://music.daydream.live" target="_blank" rel="noopener noreferrer"
+               className="tag hover:text-primary hover:border-border-hover transition-colors">Live demo</a>
+          </div>
+        </div>
+      </section>
+
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6">Music</h2>
         <div className="space-y-6">
