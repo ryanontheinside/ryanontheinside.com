@@ -14,12 +14,12 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: 'RyanOnTheInside',
-  description: 'AI Research Engineer at Daydream. Core developer on Scope, researching autoregressive video models. Creator of ComfyUI tools.',
-  keywords: ['ComfyUI', 'ML pipelines', 'AI tools', 'diffusion models', 'autoregressive video models', 'real-time control', 'Livepeer', 'Scope', 'StreamDiffusion', 'open source', 'music', 'art'],
+  description: 'Applied AI Researcher at Daydream and Pod Lead for Daydream Scope. Lead author of DEMON, a real-time streaming diffusion engine for music generation. Researching real-time generative diffusion for video and music. Creator of ComfyUI tools.',
+  keywords: ['DEMON', 'streaming diffusion', 'real-time music generation', 'ACE-Step', 'ComfyUI', 'ML pipelines', 'AI tools', 'diffusion models', 'autoregressive video models', 'real-time control', 'TensorRT', 'Livepeer', 'Daydream', 'Scope', 'StreamDiffusion', 'open source', 'music', 'art'],
   authors: [{ name: 'RyanOnTheInside' }],
   openGraph: {
     title: 'RyanOnTheInside',
-    description: 'AI Research Engineer at Daydream. Core developer on Scope, researching autoregressive video models. Creator of ComfyUI tools.',
+    description: 'Applied AI Researcher at Daydream and Pod Lead for Daydream Scope. Lead author of DEMON, a real-time streaming diffusion engine for music generation. Researching real-time generative diffusion for video and music. Creator of ComfyUI tools.',
     url: 'https://ryanontheinside.com',
     siteName: 'RyanOnTheInside',
     locale: 'en_US',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'RyanOnTheInside',
-    description: 'AI Research Engineer at Daydream. Core developer on Scope, researching autoregressive video models. Creator of ComfyUI tools.',
+    description: 'Applied AI Researcher at Daydream and Pod Lead for Daydream Scope. Lead author of DEMON, a real-time streaming diffusion engine for music generation. Researching real-time generative diffusion for video and music. Creator of ComfyUI tools.',
     creator: '@ryanontheinside',
     images: ['/logo.svg'],
   },

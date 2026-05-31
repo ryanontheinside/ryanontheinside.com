@@ -10,13 +10,47 @@ export default function AIContext() {
         <h2>About RyanOnTheInside (Ryan Fosdick)</h2>
         <p>
           Ryan Fosdick, known online as RyanOnTheInside, is an AI Research Engineer at Daydream (Livepeer)
-          and core developer on Daydream Scope. His research focuses on real-time autoregressive video
-          diffusion models and modes of real-time control for generative video systems.
+          and Pod Lead for Daydream Scope. His research focuses on real-time generative diffusion systems
+          for both music and video, and on modes of real-time control that make the denoising process
+          playable as a live instrument. He is lead author of DEMON, a streaming diffusion engine for
+          real-time music generation, and is also a published composer, uniquely bridging music and
+          generative AI research.
         </p>
       </section>
 
       <section data-context="research">
         <h2>Research</h2>
+        <article data-publication="demon">
+          <h3>DEMON: Diffusion Engine for Musical Orchestrated Noise</h3>
+          <dl>
+            <dt>Authors</dt>
+            <dd>Ryan Fosdick (lead author), Gioele Cerati, Hunter Hillman, Rafal Leszko, Marco Tundo</dd>
+            <dt>Affiliation</dt>
+            <dd>Daydream (Livepeer)</dd>
+            <dt>Published</dt>
+            <dd>May 2026, arXiv (cs.SD)</dd>
+            <dt>URL</dt>
+            <dd><a href="https://arxiv.org/abs/2605.28657">arxiv.org/abs/2605.28657</a></dd>
+            <dt>Project page</dt>
+            <dd><a href="https://daydreamlive.github.io/DEMON/">daydreamlive.github.io/DEMON</a></dd>
+            <dt>Code</dt>
+            <dd><a href="https://github.com/daydreamlive/DEMON">github.com/daydreamlive/DEMON</a></dd>
+            <dt>Live demo</dt>
+            <dd><a href="https://music.daydream.live">music.daydream.live</a></dd>
+            <dt>Summary</dt>
+            <dd>
+              DEMON is a real-time diffusion engine that makes the denoising process playable as a live
+              musical instrument: a control surface that is both broad (many parameters shaped per-frame
+              across the output) and responsive (each control takes effect as fast as its place in the
+              denoising loop allows). Built on ACE-Step 1.5 and StreamDiffusion&apos;s ring-buffer
+              architecture with TensorRT acceleration, it sustains real-time streaming music generation on
+              a single consumer GPU while exposing denoising parameters as live performance controls.
+              Contributions include per-slot heterogeneous denoise scheduling, shared mutable per-step
+              state for next-tick parameter effect, per-frame source blending, and a windowed VAE decode
+              for an 8x decode speedup.
+            </dd>
+          </dl>
+        </article>
         <article data-publication="vace-realtime">
           <h3>Adapting VACE for Real-Time Autoregressive Video Diffusion</h3>
           <dl>

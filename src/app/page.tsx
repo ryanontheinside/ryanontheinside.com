@@ -15,13 +15,15 @@ export default function Home() {
 
         <p className="text-lg sm:text-xl text-foreground/90 mb-4 max-w-2xl leading-relaxed">
           Applied AI Researcher at{' '}
-          <a href="https://daydream.live" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream</a>.
-          Pod Lead for{' '}
-          <a href="https://github.com/daydreamlive/scope" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream Scope</a>,
-          researching autoregressive video models with a focus on real-time control.
+          <a href="https://daydream.live" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream</a>
+          {' '}and Pod Lead for{' '}
+          <a href="https://github.com/daydreamlive/scope" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Daydream Scope</a>.
+          I build real-time generative systems where the model becomes a playable instrument. My latest paper,{' '}
+          <a href="https://arxiv.org/abs/2605.28657" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">DEMON</a>,
+          turns the diffusion denoising loop into a live musical control surface for streaming music generation.
         </p>
         <p className="text-sm text-text-secondary mb-8 max-w-2xl">
-          Previously tech lead on Daydream&apos;s StreamDiffusion fork (now used in production apps like TouchDesigner), where I accelerated IPAdapters and added multi-ControlNet support. Published composer and touring musician.
+          Previously tech lead on Daydream&apos;s StreamDiffusion fork (now used in production apps like TouchDesigner), whose ring-buffer architecture DEMON builds on. Published composer and touring musician.
         </p>
 
         <SocialLinks />
@@ -30,6 +32,40 @@ export default function Home() {
       {/* Latest Research */}
       <section className="mb-16 sm:mb-20">
         <h2 className="text-xs font-semibold uppercase tracking-widest text-text-secondary mb-6">Latest Research</h2>
+
+        {/* DEMON — featured */}
+        <div className="card card-hover block p-6 mb-4">
+          <div className="flex items-start justify-between gap-4 mb-3">
+            <h3 className="text-base sm:text-lg font-semibold text-foreground leading-snug">
+              DEMON: Diffusion Engine for Musical Orchestrated Noise
+            </h3>
+            <span className="tag shrink-0">arXiv 2026</span>
+          </div>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            A real-time diffusion engine that makes the denoising process playable as a live
+            musical instrument. Built on ACE-Step 1.5 and a StreamDiffusion-style ring buffer
+            with TensorRT acceleration, DEMON streams music generation on a single consumer GPU
+            while exposing denoising parameters as low-latency live performance controls.
+          </p>
+          <div className="flex items-center gap-3 text-xs text-text-secondary mb-1">
+            <span>Ryan Fosdick</span>
+            <span className="text-accent">Lead author</span>
+            <span>Daydream</span>
+          </div>
+          <p className="text-xs text-text-secondary/70 mb-4">
+            with Gioele Cerati, Hunter Hillman, Rafal Leszko, Marco Tundo
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <a href="https://arxiv.org/abs/2605.28657" target="_blank" rel="noopener noreferrer"
+               className="tag hover:text-primary hover:border-border-hover transition-colors">Paper</a>
+            <a href="https://daydreamlive.github.io/DEMON/" target="_blank" rel="noopener noreferrer"
+               className="tag hover:text-primary hover:border-border-hover transition-colors">Project page</a>
+            <a href="https://github.com/daydreamlive/DEMON" target="_blank" rel="noopener noreferrer"
+               className="tag hover:text-primary hover:border-border-hover transition-colors">Code</a>
+            <a href="https://music.daydream.live" target="_blank" rel="noopener noreferrer"
+               className="tag hover:text-primary hover:border-border-hover transition-colors">Live demo</a>
+          </div>
+        </div>
 
         <a href="https://arxiv.org/abs/2602.14381"
            target="_blank" rel="noopener noreferrer"

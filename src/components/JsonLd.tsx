@@ -11,7 +11,7 @@ export default function JsonLd() {
         "familyName": "Fosdick",
         "url": "https://ryanontheinside.com",
         "jobTitle": "AI Research Engineer at Daydream",
-        "description": "Applied ML researcher and engineer focused on real-time autoregressive video diffusion. Senior AI Research Engineer at Livepeer, core developer on Daydream Scope. Author of 'Adapting VACE for Real-Time Autoregressive Video Diffusion'. Creator of widely-used ComfyUI tooling. Published composer and musician.",
+        "description": "Applied ML researcher and engineer focused on real-time generative diffusion systems for video and music. Senior AI Research Engineer at Livepeer, Pod Lead for Daydream Scope. Lead author of 'DEMON: Diffusion Engine for Musical Orchestrated Noise' and author of 'Adapting VACE for Real-Time Autoregressive Video Diffusion'. Creator of widely-used ComfyUI tooling. Published composer and musician.",
         "worksFor": {
           "@type": "Organization",
           "name": "Daydream",
@@ -24,10 +24,14 @@ export default function JsonLd() {
           }
         },
         "knowsAbout": [
+          "Streaming diffusion",
+          "Real-time music generation",
           "Autoregressive video diffusion",
           "Real-time video generation",
+          "ACE-Step",
           "VACE (Video All-in-one Creation and Editing)",
           "Diffusion models",
+          "TensorRT acceleration",
           "ML pipeline architecture",
           "ComfyUI",
           "ControlNet",
@@ -43,7 +47,39 @@ export default function JsonLd() {
           "https://instagram.com/ryanontheinside",
           "https://x.com/ryanontheinside",
           "https://civitai.com/user/ryanontheinside",
+          "https://arxiv.org/abs/2605.28657",
           "https://arxiv.org/abs/2602.14381"
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://arxiv.org/abs/2605.28657",
+        "name": "DEMON: Diffusion Engine for Musical Orchestrated Noise",
+        "headline": "DEMON: Diffusion Engine for Musical Orchestrated Noise",
+        "author": [
+          { "@id": "https://ryanontheinside.com/#person" },
+          { "@type": "Person", "name": "Gioele Cerati" },
+          { "@type": "Person", "name": "Hunter Hillman" },
+          { "@type": "Person", "name": "Rafal Leszko" },
+          { "@type": "Person", "name": "Marco Tundo" }
+        ],
+        "datePublished": "2026-05-27",
+        "url": "https://arxiv.org/abs/2605.28657",
+        "publisher": {
+          "@type": "Organization",
+          "name": "arXiv"
+        },
+        "abstract": "DEMON is a real-time diffusion engine that makes the denoising process playable as a live musical instrument. Built on ACE-Step 1.5 and StreamDiffusion's ring-buffer architecture with TensorRT acceleration, it exposes denoising parameters as low-latency live performance controls and sustains real-time streaming music generation on a single consumer GPU.",
+        "about": [
+          "Streaming diffusion",
+          "Real-time music generation",
+          "ACE-Step",
+          "Diffusion models",
+          "TensorRT acceleration"
+        ],
+        "sameAs": [
+          "https://daydreamlive.github.io/DEMON/",
+          "https://github.com/daydreamlive/DEMON"
         ]
       },
       {
@@ -67,6 +103,17 @@ export default function JsonLd() {
           "VACE",
           "Diffusion models"
         ]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "DEMON",
+        "description": "Streaming diffusion engine for real-time music generation, built on ACE-Step 1.5 with a StreamDiffusion-style ring buffer and TensorRT acceleration. Exposes denoising parameters as live performance controls.",
+        "url": "https://github.com/daydreamlive/DEMON",
+        "codeRepository": "https://github.com/daydreamlive/DEMON",
+        "author": {
+          "@id": "https://ryanontheinside.com/#person"
+        },
+        "programmingLanguage": "Python"
       },
       {
         "@type": "SoftwareSourceCode",
